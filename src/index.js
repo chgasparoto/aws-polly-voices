@@ -1,3 +1,5 @@
+'use strict'
+
 const voicesArray = require('./voices.json').Voices
 
 const capitalize = (s) => {

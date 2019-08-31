@@ -1,3 +1,4 @@
+/* eslint-env jest */
 const Voices = require('../src/index').Voices
 
 const mockVoices = [{}]

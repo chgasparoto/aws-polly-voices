@@ -1,4 +1,4 @@
-const voicesArray = require('./voices.json').Voices
+const { Voices: voicesArray } = require('./voices')
 
 class Voices {
   constructor (voices) {

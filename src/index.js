@@ -1,4 +1,4 @@
-const { Voices: voicesArray } = require('./voices')
+import { Voices as voicesArray } from './voices'
 
 class Voices {
   constructor (voices) {
@@ -82,5 +82,5 @@ class Voices {
   }
 }
 
-const voices = module.exports = new Voices(voicesArray)
-voices.Voices = Voices
+export default new Voices(voicesArray)
+export const voices = Voices

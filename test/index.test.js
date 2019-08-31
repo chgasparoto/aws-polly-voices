@@ -1,5 +1,5 @@
 /* eslint-env jest */
-const Voices = require('../src/index').Voices
+import { voices as Voices } from '../src/index'
 
 const mockVoices = [{
   Gender: 'Female',

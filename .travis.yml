@@ -19,3 +19,5 @@ jobs:
         skip_cleanup: true
         script:
           - npx semantic-release
+          - npm run test:coverage
+          - ./node_modules/.bin/codecov

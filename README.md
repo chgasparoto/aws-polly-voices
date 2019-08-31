@@ -129,7 +129,7 @@ To run the tests go to the terminal and enter `npm run test`
 ## TODO
 - [x] 100% unit test coverage
 - [x] Documentation (this file)
-- [ ] CI/CD with `sematinc-release` integrating with `Travis`, `Github` and `NPM registry`
+- [x] CI/CD with `sematinc-release` integrating with `Travis`, `Github` and `NPM registry`
 
 ## Contributing
 

@@ -2,11 +2,6 @@
 
 const voicesArray = require('./voices.json').Voices
 
-const capitalize = (s) => {
-  if (typeof s !== 'string') return ''
-  return s.charAt(0).toUpperCase() + s.slice(1)
-}
-
 class Voices {
   constructor (voices) {
     this.voices = voices
@@ -17,12 +12,15 @@ class Voices {
   }
 
   byLang (lang) {
-    this.voices = this.voices.filter(language => language.LanguageName.includes(capitalize(lang)))
+    this.voices = this.voices.filter(voice => {
+      const language = voice.LanguageName.toLowerCase()
+      return language.includes(lang.toLowerCase())
+    })
     return this
   }
 
   byLangCode (langCode) {
-    this.voices = this.voices.filter(voice => voice.LanguageCode.includes((langCode)))
+    this.voices = this.voices.filter(voice => voice.LanguageCode.toLowerCase() === langCode.toLowerCase())
     return this
   }
 
@@ -44,12 +42,16 @@ class Voices {
     return this.byLang('Portuguese')
   }
 
+  american () {
+    return this.byLangCode('en-US')
+  }
+
   brazilian () {
-    return this.byLangCode('BR')
+    return this.byLangCode('pt-BR')
   }
 
   dutch () {
-    return this.byLangCode('NL')
+    return this.byLangCode('nl-NL')
   }
 
   female () {
@@ -65,6 +67,10 @@ class Voices {
   }
 
   get id () {
+    if (!this.voices.length) {
+      throw new Error('Voice ID not found')
+    }
+
     let random = 0
 
     if (this.voices.length > 1) {

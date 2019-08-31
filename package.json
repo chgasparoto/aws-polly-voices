@@ -1,6 +1,6 @@
 {
   "name": "aws-polly-voices",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Helper module to get AWS polly voices in an idiomatic way",
   "main": "dist/index.js",
   "scripts": {
@@ -59,6 +59,7 @@
   },
   "husky": {
     "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
       "pre-commit": "npm run lint && npm run test",
       "pre-push": "npm run lint"
     }

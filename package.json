@@ -10,7 +10,13 @@
     "test:coverage": "npm test -- --coverage",
     "serve": "node dist/index.js",
     "lint": "standard",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "prebuild": "rimraf dist",
+    "build": "babel src --out-dir dist --ignore */__mocks__/*,*.test.js",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release",
+    "commit": "git-cz",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -39,6 +45,11 @@
     "rimraf": "^3.0.0",
     "semantic-release": "^15.13.24",
     "standard": "^14.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "jest": {
     "testEnvironment": "node",

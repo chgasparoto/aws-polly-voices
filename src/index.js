@@ -1,5 +1,3 @@
-'use strict'
-
 const voicesArray = require('./voices.json').Voices
 
 class Voices {
@@ -7,8 +5,11 @@ class Voices {
     this.voices = voices
   }
 
-  languages () {
-    return [...new Set(this.voices.map(voice => voice.LanguageName))].sort()
+  languages (field = 'LanguageName') {
+    const keys = ['Gender', 'Name', 'LanguageName', 'Id', 'LanguageCode']
+    const key = keys.includes(field) ? keys[field] : field
+
+    return [...new Set(this.voices.map(voice => voice[key]))].sort()
   }
 
   byLang (lang) {

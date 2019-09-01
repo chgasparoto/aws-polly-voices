@@ -55,8 +55,8 @@ const voices = new Voices()
 
 const brazilianFemaleVoice = voices.brazilian().female()
 
-// Returns the array with the voice(s) data, depending on the selected language
-// this array can have more than one element.
+// Returns the array with the voice(s) data.
+// Depending on the selected language this array can have more than one element.
 const voiceData = brabrazilianFemaleVoice.val
 
 console.log(voiceData)
@@ -70,8 +70,10 @@ console.log(voiceData)
  }]
  */
 
-// Get the VoiceId. If there is only one element in voiceData array then it will return that
-// voiceId otherwise will return a random voiceId based on the criterias. See the bellow example.
+// Get the VoiceId.
+// If there is only one element in voiceData array then it will return that voiceId.
+// Otherwise it will return a random voiceId based on the criteria (chained methods and/or filters).
+// See the next example for clarity.
 const voiceId = brazilianFemaleVoice.id // Vitoria
 ```
 
@@ -107,7 +109,7 @@ const justin = voiceData[1].Id // Justin
 ```
 
 #### Full API reference
-Most of methods are chainable.
+Most of the methods are chainable.
 
 ```javascript
 const Voices = require('aws-polly-voices')
@@ -115,7 +117,7 @@ const voices = new Voices()
 
 // available languages by name
 // this parameter can be: ['Gender', 'Name', 'LanguageName', 'Id', 'LanguageCode']
-// deaults to: LanguageName
+// defaults to: LanguageName
 const allLanguages = voices.languages()
 
 // available Voice Id

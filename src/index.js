@@ -62,6 +62,10 @@ export default class Voices {
     return this.byLangCode('nl-NL')
   }
 
+  italian () {
+    return this.byLangCode('it-IT')
+  }
+
   female () {
     return this.byGender('female')
   }

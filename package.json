@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "nodemon --exec babel-node src/index.js",
-    "test": "jest",
-    "test:watch": "npm test -- --watch",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "test:coverage": "npm test -- --coverage",
     "serve": "node dist/index.js",
     "lint": "standard",
@@ -61,7 +61,21 @@
     "testEnvironment": "node",
     "setupFilesAfterEnv": [
       "jest-extended"
-    ]
+    ],
+    "collectCoverageFrom": [
+      "src/*.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
   },
   "husky": {
     "hooks": {

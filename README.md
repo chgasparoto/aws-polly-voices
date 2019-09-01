@@ -1,5 +1,4 @@
 # AWS Polly Voices
-:package: Helper module to get AWS polly voices in an idiomatic way :baby_chick:
 
 A lightweight library to get the VoiceID programmatically without install or call the heavyweight aws-sdk for nodejs. https://docs.aws.amazon.com/polly/latest/dg/voicelist.html
 

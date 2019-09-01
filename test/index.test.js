@@ -1,5 +1,5 @@
 /* eslint-env jest */
-import { voices as Voices } from '../src/index'
+import Voices from '../src/index'
 
 const mockVoices = [{
   Gender: 'Female',
@@ -44,17 +44,47 @@ const mockVoices = [{
   LanguageCode: 'en-US'
 }]
 
-let voices
+const voices = new Voices(mockVoices)
 const voiceObjectKeys = ['Gender', 'Name', 'LanguageName', 'Id', 'LanguageCode']
 
 describe('Voices', () => {
   beforeEach(() => {
-    voices = new Voices(mockVoices)
+    voices.reset()
+  })
+
+  test('it should instanciate a new Voices class with default voices array', () => {
+    const defaultVoices = new Voices()
+    expect(defaultVoices.val).toBeArray()
+    expect(defaultVoices.val[0]).toBeObject()
+    expect(defaultVoices.val[0]).toContainAllKeys(voiceObjectKeys)
+    expect(defaultVoices.id).toBeString()
   })
 
   test('it should return an array of available languages', () => {
     const langs = voices.languages()
     expect(langs).toBeArray()
+    expect(langs.length).not.toBe(0)
+  })
+
+  test('it should return an array of available languages if given an invalid key', () => {
+    const invalid = voices.languages('this key is invalid')
+    const valid = voices.languages()
+    expect(invalid).toBeArray()
+    expect(invalid).toStrictEqual(valid)
+  })
+
+  test('it should return an array for each voiceObjectKeys', () => {
+    voiceObjectKeys.forEach(key => {
+      expect(voices.languages(key)).toBeArray()
+    })
+  })
+
+  test('it should reset the voices after filter it', () => {
+    const portuguese = voices.byLang('portuguese')
+    expect(portuguese.val).not.toBe(mockVoices)
+
+    portuguese.reset()
+    expect(portuguese.val).toBe(mockVoices)
   })
 
   test('it should return voice data by given language', () => {

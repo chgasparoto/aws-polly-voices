@@ -1,13 +1,20 @@
 import { Voices as voicesArray } from './voices'
 
-class Voices {
-  constructor (voices) {
+export default class Voices {
+  constructor (voices = voicesArray) {
     this.voices = voices
+    this.original = voices
+  }
+
+  reset () {
+    this.voices = this.original
+    return this
   }
 
   languages (field = 'LanguageName') {
     const keys = ['Gender', 'Name', 'LanguageName', 'Id', 'LanguageCode']
-    const key = keys.includes(field) ? keys[field] : field
+    const index = keys.findIndex(element => element === field)
+    const key = index !== -1 ? index : 2
 
     return [...new Set(this.voices.map(voice => voice[key]))].sort()
   }
@@ -81,6 +88,3 @@ class Voices {
     return this.voices[random].Id
   }
 }
-
-export default new Voices(voicesArray)
-export const voices = Voices

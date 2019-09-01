@@ -35,24 +35,28 @@ yarn add aws-polly-voices
 #### Importing with Commonjs style
 
 ```javascript
-const voices = require('aws-polly-voices')
+const Voices = require('aws-polly-voices')
+const voices = new Voices()
 ```
 
 #### Importing with ES6 modules style
 
 ```javascript
-import voices from 'aws-polly-voices'
+import Voices from 'aws-polly-voices'
+const voices = new Voices()
 ```
 
 #### Examples
 
 #### With SINGLE VoiceId
 ```javascript
-const voices = require('aws-polly-voices')
+const Voices = require('aws-polly-voices')
+const voices = new Voices()
+
 const brazilianFemaleVoice = voices.brazilian().female()
 
-// Returns the array with the voice(s), depending on the selected language this array can be bigger
-// than one element.
+// Returns the array with the voice(s) data, depending on the selected language
+// this array can have more than one element.
 const voiceData = brabrazilianFemaleVoice.val
 
 console.log(voiceData)
@@ -67,13 +71,15 @@ console.log(voiceData)
  */
 
 // Get the VoiceId. If there is only one element in voiceData array then it will return that
-// voiceId otherwise will return a random voiceId based on the criterias.
+// voiceId otherwise will return a random voiceId based on the criterias. See the bellow example.
 const voiceId = brazilianFemaleVoice.id // Vitoria
 ```
 
 #### With MULTIPLE VoiceId
 ```javascript
-const voices = require('aws-polly-voices')
+const Voices = require('aws-polly-voices')
+const voices = new Voices()
+
 const englishMaleVoices = voices.english().male()
 
 const voiceData = englishMaleVoices.val
@@ -104,10 +110,16 @@ const justin = voiceData[1].Id // Justin
 Most of methods are chainable.
 
 ```javascript
-const voices = require('aws-polly-voices')
+const Voices = require('aws-polly-voices')
+const voices = new Voices()
 
 // available languages by name
+// this parameter can be: ['Gender', 'Name', 'LanguageName', 'Id', 'LanguageCode']
+// deaults to: LanguageName
 const allLanguages = voices.languages()
+
+// available Voice Id
+const allVoicesId = voices.languages('Id')
 
 // by language: english
 const english = voices.english() || voices.byLang('english')
@@ -120,6 +132,13 @@ const portuguese = voices.portuguese().male() || voices.brazilian().male()
 
 // by voice id
 const vitoria = voices.byId('Vitoria')
+
+// reseting the filter
+const portuguese = voices.portuguese().male()
+
+voices.reset()
+
+const dutch = voices.dutch().female()
 ```
 
 ## Running the tests
@@ -130,6 +149,7 @@ To run the tests go to the terminal and enter `npm run test`
 - [x] 100% unit test coverage
 - [x] Documentation (this file)
 - [x] CI/CD with `sematinc-release` integrating with `Travis`, `Github` and `NPM registry`
+- [ ] Add missing helper methods to other languages/nationalities. E.g.: french, italian, spanish and so on
 
 ## Contributing
 

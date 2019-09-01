@@ -1,6 +1,8 @@
 # AWS Polly Voices
 :package: Helper module to get AWS polly voices in an idiomatic way :baby_chick:
 
+A lightweight library to get the VoiceID programmatically without install or call the heavyweight aws-sdk for nodejs. https://docs.aws.amazon.com/polly/latest/dg/voicelist.html
+
 [![travis build](https://img.shields.io/travis/chgasparoto/aws-polly-voices.svg?style=flat-square)](https://travis-ci.org/chgasparoto/aws-polly-voices)
 [![codecov coverage](https://img.shields.io/codecov/c/github/chgasparoto/aws-polly-voices.svg?style=flat-square)](https://codecov.io/gh/chgasparoto/aws-polly-voices)
 [![version](https://img.shields.io/npm/v/aws-polly-voices.svg?style=flat-square)](https://www.npmjs.com/package/aws-polly-voices)

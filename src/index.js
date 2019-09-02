@@ -1,4 +1,4 @@
-import { Voices as voicesArray } from './voices'
+import { Voices as voicesArray } from './voices.json'
 
 export default class Voices {
   constructor (voices = voicesArray) {

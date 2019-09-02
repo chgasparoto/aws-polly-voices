@@ -12,7 +12,7 @@
     "lint": "standard",
     "lint:fix": "npm run lint -- --fix",
     "prebuild": "rimraf dist",
-    "build": "babel src --out-dir dist --ignore *.test.js",
+    "build": "babel --copy-files src --out-dir dist --ignore *.test.js",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
     "commit": "git-cz",

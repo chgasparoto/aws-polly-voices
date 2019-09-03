@@ -58,7 +58,7 @@ const brazilianFemaleVoice = voices.brazilian().female()
 
 // Returns the array with the voice(s) data.
 // Depending on the selected language this array can have more than one element.
-const voiceData = brabrazilianFemaleVoice.val
+const voiceData = brazilianFemaleVoice.val
 
 console.log(voiceData)
 /**

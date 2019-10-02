@@ -42,6 +42,13 @@ const mockVoices = [{
   LanguageName: 'US English',
   Id: 'Justin',
   LanguageCode: 'en-US'
+},
+{
+  Gender: 'Male',
+  Name: 'Justin',
+  LanguageName: 'GB English',
+  Id: 'Justin',
+  LanguageCode: 'en-GB'
 }]
 
 const voices = new Voices(mockVoices)
@@ -225,5 +232,19 @@ describe('Voices', () => {
 
   test('it should throw an error if voice id was not found', () => {
     expect(() => voices.byId('Robot').id).toThrow('Voice ID not found')
+  })
+
+  test('it should return BRITISH ENGLISH voice data', () => {
+    const spy = jest.spyOn(voices, 'byLangCode')
+    const british = voices.british()
+
+    expect(british.val).toBeArray()
+    expect(british.val[0]).toBeObject()
+    expect(british.val[0]).toContainAllKeys(voiceObjectKeys)
+    expect(british.id).toBeString()
+
+    expect(spy).toHaveBeenCalledWith('en-GB')
+
+    spy.mockRestore()
   })
 })

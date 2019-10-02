@@ -58,6 +58,10 @@ export default class Voices {
     return this.byLangCode('pt-BR')
   }
 
+  british () {
+    return this.byLangCode('en-GB')
+  }
+
   dutch () {
     return this.byLangCode('nl-NL')
   }

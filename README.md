@@ -146,7 +146,7 @@ const dutch = voices.dutch().female()
 
 ## Running the tests
 
-To run the tests go to the terminal and enter `npm run test`
+To run the tests, go to the terminal and enter `npm run test`
 
 ## TODO
 - [x] 100% unit test coverage

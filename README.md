@@ -1,5 +1,6 @@
 # AWS Polly Voices
-:package: Helper module to get AWS polly voices in an idiomatic way :baby_chick:
+
+A lightweight library to get the VoiceID programmatically without install or call the heavyweight aws-sdk for nodejs. https://docs.aws.amazon.com/polly/latest/dg/voicelist.html
 
 [![travis build](https://img.shields.io/travis/chgasparoto/aws-polly-voices.svg?style=flat-square)](https://travis-ci.org/chgasparoto/aws-polly-voices)
 [![codecov coverage](https://img.shields.io/codecov/c/github/chgasparoto/aws-polly-voices.svg?style=flat-square)](https://codecov.io/gh/chgasparoto/aws-polly-voices)
@@ -57,7 +58,7 @@ const brazilianFemaleVoice = voices.brazilian().female()
 
 // Returns the array with the voice(s) data.
 // Depending on the selected language this array can have more than one element.
-const voiceData = brabrazilianFemaleVoice.val
+const voiceData = brazilianFemaleVoice.val
 
 console.log(voiceData)
 /**
@@ -141,11 +142,13 @@ const portuguese = voices.portuguese().male()
 voices.reset()
 
 const dutch = voices.dutch().female()
+const italian = voices.italian()
+
 ```
 
 ## Running the tests
 
-To run the tests go to the terminal and enter `npm run test`
+To run the tests, go to the terminal and enter `npm run test`
 
 ## TODO
 - [x] 100% unit test coverage

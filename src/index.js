@@ -1,4 +1,4 @@
-import { Voices as voicesArray } from './voices'
+import { Voices as voicesArray } from './voices.json'
 
 export default class Voices {
   constructor (voices = voicesArray) {
@@ -58,12 +58,28 @@ export default class Voices {
     return this.byLangCode('pt-BR')
   }
 
+  british () {
+    return this.byLangCode('en-GB')
+  }
+
   dutch () {
     return this.byLangCode('nl-NL')
   }
 
   italian () {
     return this.byLangCode('it-IT')
+  }
+
+  russian () {
+    return this.byLangCode('ru-RU')
+  }
+
+  german () {
+    return this.byLangCode('de-DE')
+  }
+
+  polish () {
+    return this.byLangCode('pl-PL')
   }
 
   female () {

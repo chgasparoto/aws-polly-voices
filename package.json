@@ -5,14 +5,14 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "nodemon --exec babel-node src/index.js",
-    "test": "jest",
-    "test:watch": "npm test -- --watch",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "test:coverage": "npm test -- --coverage",
     "serve": "node dist/index.js",
     "lint": "standard",
     "lint:fix": "npm run lint -- --fix",
     "prebuild": "rimraf dist",
-    "build": "babel src --out-dir dist --ignore *.test.js",
+    "build": "babel --copy-files src --out-dir dist --ignore *.test.js",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
     "commit": "git-cz",
@@ -61,7 +61,21 @@
     "testEnvironment": "node",
     "setupFilesAfterEnv": [
       "jest-extended"
-    ]
+    ],
+    "collectCoverageFrom": [
+      "src/*.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
   },
   "husky": {
     "hooks": {

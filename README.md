@@ -159,8 +159,9 @@ const brazilian = voice.brazilian()
 ## Running the tests
 
 To run the tests, go to the terminal and enter:
-All tests: `npm run test`
-Watch: `npm run test:watch`
+
+- All tests: `npm run test`
+- Watch: `npm run test:watch`
 
 ## TODO
 - [x] 100% unit test coverage

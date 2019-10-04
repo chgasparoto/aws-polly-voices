@@ -86,6 +86,10 @@ export default class Voices {
     return this.byLangCode('pl-PL')
   }
 
+  norwegian () {
+    return this.byLangCode('nb-NO')
+  }
+
   female () {
     return this.byGender('female')
   }

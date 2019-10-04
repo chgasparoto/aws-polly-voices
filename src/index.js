@@ -66,6 +66,10 @@ export default class Voices {
     return this.byLangCode('nl-NL')
   }
 
+  romanian () {
+    return this.byLangCode('ro-RO')
+  }
+
   russian () {
     return this.byLangCode('ru-RU')
   }

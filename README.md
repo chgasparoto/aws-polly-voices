@@ -149,6 +149,7 @@ const british = voices.british()
 const russian = voices.russian()
 const german = voices.german()
 const polish = voices.polish()
+const turkish = voices.turkish()
 
 // Helpers for specific language and country
 const american = voice.american()
@@ -183,7 +184,7 @@ To run the tests, go to the terminal and enter:
 - [ ] Implement a helper for `Canadian French`
 - [ ] Implement a helper for `Australian English`
 - [ ] Implement a helper for `Romanian`
-- [ ] Implement a helper for `Turkish`
+- [x] Implement a helper for `Turkish`
 - [ ] Implement a helper for `French`
 - [ ] Implement a helper for `Danish`
 - [ ] Implement a helper for `Japanese`

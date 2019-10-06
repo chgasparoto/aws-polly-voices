@@ -2,19 +2,20 @@
   "name": "aws-polly-voices",
   "version": "0.0.0-development",
   "description": "Helper module to get AWS polly voices in an idiomatic way",
-  "main": "dist/index.js",
+  "main": "dist/index.ts",
   "scripts": {
-    "dev": "nodemon --exec babel-node src/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "serve": "node dist/index.js",
     "lint": "standard",
     "lint:fix": "npm run lint -- --fix",
     "prebuild": "rimraf dist",
-    "build": "babel --copy-files src --out-dir dist --ignore *.test.js",
+    "build": "babel --extensions '.ts' --copy-files src --out-dir dist --ignore *.test.ts",
     "semantic-release": "semantic-release",
     "commit": "git-cz",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "check-types": "tsc"
   },
   "repository": {
     "type": "git",
@@ -38,7 +39,10 @@
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
     "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/node": "^12.7.11",
     "babel-plugin-add-module-exports": "^1.0.2",
     "codecov": "^3.5.0",
     "cz-conventional-changelog": "^3.0.2",
@@ -48,7 +52,9 @@
     "nodemon": "^1.19.1",
     "rimraf": "^3.0.0",
     "semantic-release": "^15.13.24",
-    "standard": "^14.1.0"
+    "standard": "^14.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
   },
   "config": {
     "commitizen": {
@@ -61,7 +67,8 @@
       "jest-extended"
     ],
     "collectCoverageFrom": [
-      "src/*.js"
+      "src/*.js",
+      "src/*.ts"
     ],
     "coveragePathIgnorePatterns": [
       "/node_modules/"

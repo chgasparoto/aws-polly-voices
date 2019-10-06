@@ -7,7 +7,11 @@ module.exports = {
           node: 'current'
         }
       }
-    ]
+    ],
+    '@babel/typescript'
   ],
-  plugins: ['add-module-exports']
+  plugins: [
+    'add-module-exports',
+    '@babel/proposal-object-rest-spread'
+  ]
 }

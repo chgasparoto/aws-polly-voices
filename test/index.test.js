@@ -77,7 +77,15 @@ const mockVoices = [{
   LanguageName: 'Polish',
   Id: 'Maja',
   LanguageCode: 'pl-PL'
-}]
+},
+{
+  Gender: 'Male',
+  Name: '张伟 Zhang Wei',
+  LanguageName: 'Chinese Mandarin',
+  Id: '张伟 Zhang Wei',
+  LanguageCode: 'zh-CN'
+}
+]
 
 const voices = new Voices(mockVoices)
 const voiceObjectKeys = ['Gender', 'Name', 'LanguageName', 'Id', 'LanguageCode']
@@ -262,6 +270,20 @@ describe('Voices', () => {
     expect(dutch.id).toBeString()
 
     expect(spy).toHaveBeenCalledWith('nl-NL')
+
+    spy.mockRestore()
+  })
+
+  test('it should return CHINESE MANDARIN voice data', () => {
+    const spy = jest.spyOn(voices, 'byLangCode')
+    const chineseMandarin = voices.chineseMandarin()
+
+    expect(chineseMandarin.val).toBeArray()
+    expect(chineseMandarin.val[0]).toBeObject()
+    expect(chineseMandarin.val[0]).toContainAllKeys(voiceObjectKeys)
+    expect(chineseMandarin.id).toBeString()
+
+    expect(spy).toHaveBeenCalledWith('zh-CN')
 
     spy.mockRestore()
   })

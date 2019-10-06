@@ -28,12 +28,16 @@ export default class Voices {
   }
 
   byLangCode (langCode) {
-    this.voices = this.voices.filter(voice => voice.LanguageCode.toLowerCase() === langCode.toLowerCase())
+    this.voices = this.voices.filter(
+      voice => voice.LanguageCode.toLowerCase() === langCode.toLowerCase()
+    )
     return this
   }
 
   byGender (gender) {
-    this.voices = this.voices.filter(voice => voice.Gender.toLowerCase() === gender.toLowerCase())
+    this.voices = this.voices.filter(
+      voice => voice.Gender.toLowerCase() === gender.toLowerCase()
+    )
     return this
   }
 
@@ -80,6 +84,10 @@ export default class Voices {
 
   polish () {
     return this.byLangCode('pl-PL')
+  }
+
+  chineseMandarin () {
+    return this.byLangCode('zh-CN')
   }
 
   female () {

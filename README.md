@@ -183,7 +183,7 @@ To run the tests, go to the terminal and enter:
 - [x] 100% unit test coverage
 - [x] Documentation (this file)
 - [x] CI/CD with `sematinc-release` integrating with `Travis`, `Github` and `NPM registry`
-- [ ] Add support for Typescript
+- [x] Add support for Typescript
 - [x] Implement a helper for `Portugal Portuguese`
 - [ ] Implement a helper for `Welsh English`
 - [ ] Implement a helper for `Spanish`

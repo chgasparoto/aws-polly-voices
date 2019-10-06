@@ -82,6 +82,10 @@ export default class Voices {
     return this.byLangCode('pl-PL')
   }
 
+  indian () {
+    return this.byLangCode('en-IN')
+  }
+
   female () {
     return this.byGender('female')
   }

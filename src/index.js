@@ -78,6 +78,10 @@ export default class Voices {
     return this.byLangCode('de-DE')
   }
 
+  mexican () {
+    return this.byLangCode('es-MX')
+  }
+
   polish () {
     return this.byLangCode('pl-PL')
   }

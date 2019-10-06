@@ -154,7 +154,8 @@ const turkish = voices.turkish()
 const american = voice.american()
 const brazilian = voice.brazilian()
 const british = voices.british()
-cosnt indian = voices.indian()
+const indian = voices.indian()
+
 
 ```
 

@@ -145,7 +145,6 @@ const portuguese = voices.portuguese().male()
 const english = voices.english()
 const portuguese = voices.portuguese()
 const dutch = voices.dutch()
-const british = voices.british()
 const russian = voices.russian()
 const german = voices.german()
 const polish = voices.polish()
@@ -154,6 +153,7 @@ const turkish = voices.turkish()
 // Helpers for specific language and country
 const american = voice.american()
 const brazilian = voice.brazilian()
+const british = voices.british()
 
 ```
 

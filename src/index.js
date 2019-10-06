@@ -82,6 +82,10 @@ export default class Voices {
     return this.byLangCode('pl-PL')
   }
 
+  icelandic () {
+    return this.byLangCode('is-IS')
+  }
+
   female () {
     return this.byGender('female')
   }

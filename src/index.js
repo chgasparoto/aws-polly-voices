@@ -70,6 +70,10 @@ export default class Voices {
     return this.byLangCode('ru-RU')
   }
 
+  danish () {
+    return this.byLangCode('da-DK')
+  }
+
   turkish () {
     return this.byLangCode('tr-TR')
   }

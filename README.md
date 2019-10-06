@@ -149,6 +149,7 @@ const russian = voices.russian()
 const german = voices.german()
 const polish = voices.polish()
 const turkish = voices.turkish()
+const indianEnglish = voices.indianEnglish()
 
 // Helpers for specific language and country
 const american = voice.american()

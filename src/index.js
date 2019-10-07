@@ -83,7 +83,7 @@ export default class Voices {
   }
 
   spanish () {
-    return this.byLangCode('es-ES')
+    return this.byLang('Castilian Spanish')
   }
 
   female () {

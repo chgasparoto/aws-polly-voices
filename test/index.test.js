@@ -23,18 +23,18 @@ const mockVoices = [{
   LanguageCode: 'de-DE'
 },
 {
-    Gender: 'Female',
-    Name: 'Mizuki',
-    LanguageName: 'Japanese',
-    Id: 'Mizuki',
-    LanguageCode: 'ja-JP'
+  Gender: 'Female',
+  Name: 'Mizuki',
+  LanguageName: 'Japanese',
+  Id: 'Mizuki',
+  LanguageCode: 'ja-JP'
 },
 {
-    Gender: 'Male',
-    Name: 'Takumi',
-    LanguageName: 'Japanese',
-    Id: 'Takumi',
-    LanguageCode: 'ja-JP'
+  Gender: 'Male',
+  Name: 'Takumi',
+  LanguageName: 'Japanese',
+  Id: 'Takumi',
+  LanguageCode: 'ja-JP'
 },
 {
   Gender: 'Female',

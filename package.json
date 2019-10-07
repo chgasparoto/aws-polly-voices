@@ -4,16 +4,14 @@
   "description": "Helper module to get AWS polly voices in an idiomatic way",
   "main": "dist/index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js",
+    "dev": "nodemon --exec babel-node src/index.js",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "test:coverage": "npm test -- --coverage",
     "serve": "node dist/index.js",
     "lint": "standard",
     "lint:fix": "npm run lint -- --fix",
     "prebuild": "rimraf dist",
     "build": "babel --copy-files src --out-dir dist --ignore *.test.js",
-    "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
     "commit": "git-cz",
     "prepublishOnly": "npm run build"

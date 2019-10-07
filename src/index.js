@@ -62,8 +62,32 @@ export default class Voices {
     return this.byLangCode('pt-BR')
   }
 
+  british () {
+    return this.byLangCode('en-GB')
+  }
+
   dutch () {
     return this.byLangCode('nl-NL')
+  }
+
+  russian () {
+    return this.byLangCode('ru-RU')
+  }
+
+  turkish () {
+    return this.byLangCode('tr-TR')
+  }
+
+  german () {
+    return this.byLangCode('de-DE')
+  }
+
+  japanese () {
+    return this.byLangCode('ja-JP')
+  }
+
+  polish () {
+    return this.byLangCode('pl-PL')
   }
 
   female () {

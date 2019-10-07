@@ -16,7 +16,7 @@ A lightweight library to get the VoiceID programmatically without install or cal
 
 ```sh
 node -v
-node: v6.0.0
+node: >= v8.16.1
 ```
 
 ## Installing
@@ -24,6 +24,7 @@ node: v6.0.0
 #### Using npm
 ```sh
 npm install --save aws-polly-voices
+npm i aws-polly-voices
 ```
 
 #### Using Yarn
@@ -131,28 +132,65 @@ const english = voices.english() || voices.byLang('english')
 const dutch = voices.dutch() || voice.byLangCode('nl-NL')
 
 // by gender: male || female
-const portuguese = voices.portuguese().male() || voices.brazilian().male()
+const portuguese = voices.portuguese().male() || voices.brazilian().female()
 
 // by voice id
 const vitoria = voices.byId('Vitoria')
 
 // reseting the filter
+voices.reset()
 const portuguese = voices.portuguese().male()
 
-voices.reset()
+// Helpers for specific languages
+const english = voices.english()
+const portuguese = voices.portuguese()
+const dutch = voices.dutch()
+const russian = voices.russian()
+const german = voices.german()
+const polish = voices.polish()
+const turkish = voices.turkish()
+const japanese = voices.japanese()
 
-const dutch = voices.dutch().female()
+// Helpers for specific language and country
+const american = voice.american()
+const brazilian = voice.brazilian()
+const british = voices.british()
+
 ```
 
 ## Running the tests
 
-To run the tests go to the terminal and enter `npm run test`
+To run the tests, go to the terminal and enter:
+
+- All tests: `npm run test`
+- Watch: `npm run test:watch`
 
 ## TODO
 - [x] 100% unit test coverage
 - [x] Documentation (this file)
 - [x] CI/CD with `sematinc-release` integrating with `Travis`, `Github` and `NPM registry`
-- [ ] Add missing helper methods to other languages/nationalities. E.g.: french, italian, spanish and so on
+- [ ] Add support for Typescript
+- [ ] Implement a helper for `Portugal Portuguese`
+- [ ] Implement a helper for `Welsh English`
+- [ ] Implement a helper for `Spanish`
+- [ ] Implement a helper for `US Spanish`
+- [ ] Implement a helper for `Castilian Spanish`
+- [ ] Implement a helper for `Mexican Spanish`
+- [ ] Implement a helper for `Icelandic`
+- [ ] Implement a helper for `Arabic`
+- [ ] Implement a helper for `Chinese Mandarin`
+- [ ] Implement a helper for `Welsh`
+- [ ] Implement a helper for `Swedish`
+- [ ] Implement a helper for `Indian English`
+- [ ] Implement a helper for `Canadian French`
+- [ ] Implement a helper for `Australian English`
+- [ ] Implement a helper for `Romanian`
+- [x] Implement a helper for `Turkish`
+- [ ] Implement a helper for `French`
+- [ ] Implement a helper for `Danish`
+- [x] Implement a helper for `Japanese`
+- [ ] Implement a helper for `Norwegian`
+- [ ] Implement a helper for `Korean`
 
 ## Contributing
 

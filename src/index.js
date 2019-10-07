@@ -85,6 +85,9 @@ export default class Voices {
   polish () {
     return this.byLangCode('pl-PL')
   }
+  arabic(){
+    return this.byLangCode('arb')
+  }
 
   female () {
     return this.byGender('female')

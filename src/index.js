@@ -82,6 +82,10 @@ export default class Voices {
     return this.byLangCode('ja-JP')
   }
 
+  danish () {
+    return this.byLangCode('da-DK')
+  }
+
   polish () {
     return this.byLangCode('pl-PL')
   }

@@ -54,6 +54,10 @@ export default class Voices {
     return this.byLangCode('en-US')
   }
 
+  americanSpanish () {
+    return this.byLangCode('es-US')
+  }
+
   brazilian () {
     return this.byLangCode('pt-BR')
   }

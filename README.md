@@ -153,6 +153,7 @@ const turkish = voices.turkish()
 // Helpers for specific language and country
 const american = voice.american()
 const brazilian = voice.brazilian()
+const europeanPortuguese = voice.europeanPortuguese()
 const british = voices.british()
 
 ```

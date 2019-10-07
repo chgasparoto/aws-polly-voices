@@ -79,11 +79,11 @@ const mockVoices = [{
   LanguageCode: 'pl-PL'
 },
 {
-  Gender: 'Male',
-  Name: 'Justin',
-  LanguageName: 'GB English',
-  Id: 'Justin',
-  LanguageCode: 'en-GB'
+  Gender: 'Female',
+  Name: 'Aditi',
+  LanguageName: 'IN English',
+  Id: 'Aditi',
+  LanguageCode: 'en-IN'
 }
 ]
 
@@ -342,12 +342,12 @@ describe('Voices', () => {
 
   test('it should return INDIAN ENGLISH voice data', () => {
     const spy = jest.spyOn(voices, 'byLangCode')
-    const indian = voices.indian()
+    const indianEnglish = voices.indianEnglish()
 
-    expect(indian.val).toBeArray()
-    expect(indian.val[0]).toBeObject()
-    expect(indian.val[0]).toContainAllKeys(voiceObjectKeys)
-    expect(indian.id).toBeString()
+    expect(indianEnglish.val).toBeArray()
+    expect(indianEnglish.val[0]).toBeObject()
+    expect(indianEnglish.val[0]).toContainAllKeys(voiceObjectKeys)
+    expect(indianEnglish.id).toBeString()
 
     expect(spy).toHaveBeenCalledWith('en-IN')
 

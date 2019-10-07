@@ -81,11 +81,8 @@ export default class Voices {
   polish () {
     return this.byLangCode('pl-PL')
   }
+  
   indianEnglish () {
-    return this.byLangCode('en-IN')
-  }
-
-  indian () {
     return this.byLangCode('en-IN')
   }
 

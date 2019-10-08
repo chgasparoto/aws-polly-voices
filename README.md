@@ -151,11 +151,12 @@ const polish = voices.polish()
 const turkish = voices.turkish()
 const japanese = voices.japanese()
 
+
 // Helpers for specific language and country
 const american = voice.american()
 const brazilian = voice.brazilian()
 const british = voices.british()
-
+const castilian = voices.castilian()
 ```
 
 ## Running the tests

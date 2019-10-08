@@ -147,7 +147,6 @@ const portuguese = voices.portuguese()
 const dutch = voices.dutch()
 const russian = voices.russian()
 const german = voices.german()
-const mexican = voices.mexican()
 const polish = voices.polish()
 const turkish = voices.turkish()
 const japanese = voices.japanese()
@@ -156,6 +155,7 @@ const japanese = voices.japanese()
 const american = voice.american()
 const brazilian = voice.brazilian()
 const british = voices.british()
+const mexican = voices.mexican()
 
 ```
 

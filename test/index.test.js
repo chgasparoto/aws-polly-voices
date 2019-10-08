@@ -346,7 +346,7 @@ describe('Voices', () => {
   })
 
   test('it should return FRENCH voice data', () => {
-    const spy = jest.spyOn(voices, 'byLangCode')
+    const spy = jest.spyOn(voices, 'byLang')
     const french = voices.french()
 
     expect(french.val).toBeArray()
@@ -354,7 +354,7 @@ describe('Voices', () => {
     expect(french.val[0]).toContainAllKeys(voiceObjectKeys)
     expect(french.id).toBeString()
 
-    expect(spy).toHaveBeenCalledWith('fr-FR')
+    expect(spy).toHaveBeenCalledWith('French')
 
     spy.mockRestore()
   })

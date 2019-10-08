@@ -86,6 +86,10 @@ export default class Voices {
     return this.byLangCode('pl-PL')
   }
 
+  korean () {
+    return this.byLangCode('ko-KR')
+  }
+
   female () {
     return this.byGender('female')
   }

@@ -149,6 +149,7 @@ const russian = voices.russian()
 const german = voices.german()
 const polish = voices.polish()
 const turkish = voices.turkish()
+const spanish = voices.spanish()
 
 // Helpers for specific language and country
 const american = voice.american()
@@ -171,7 +172,7 @@ To run the tests, go to the terminal and enter:
 - [ ] Add support for Typescript
 - [ ] Implement a helper for `Portugal Portuguese`
 - [ ] Implement a helper for `Welsh English`
-- [ ] Implement a helper for `Spanish`
+- [x] Implement a helper for `Spanish`
 - [ ] Implement a helper for `US Spanish`
 - [ ] Implement a helper for `Castilian Spanish`
 - [ ] Implement a helper for `Mexican Spanish`

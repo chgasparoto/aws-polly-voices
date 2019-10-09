@@ -170,7 +170,7 @@ To run the tests, go to the terminal and enter:
 - [x] Documentation (this file)
 - [x] CI/CD with `sematinc-release` integrating with `Travis`, `Github` and `NPM registry`
 - [ ] Add support for Typescript
-- [ ] Implement a helper for `Portugal Portuguese`
+- [x] Implement a helper for `Portugal Portuguese`
 - [ ] Implement a helper for `Welsh English`
 - [ ] Implement a helper for `Spanish`
 - [ ] Implement a helper for `US Spanish`

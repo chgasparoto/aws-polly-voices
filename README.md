@@ -156,6 +156,7 @@ const american = voice.american()
 const brazilian = voice.brazilian()
 const british = voices.british()
 const mexican = voices.mexican()
+const indianEnglish = voices.indian()
 
 ```
 

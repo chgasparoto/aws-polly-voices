@@ -50,6 +50,10 @@ export default class Voices {
     return this.byLang('Portuguese')
   }
 
+  french () {
+    return this.byLang('French')
+  }
+
   american () {
     return this.byLangCode('en-US')
   }

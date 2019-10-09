@@ -57,9 +57,17 @@ export default class Voices {
   american () {
     return this.byLangCode('en-US')
   }
+  
+  canadianFrench () {
+    return this.byLangCode('fr-CA')
+  }
 
   brazilian () {
     return this.byLangCode('pt-BR')
+  }
+
+  europeanPortuguese () {
+    return this.byLangCode('pt-PT')
   }
 
   british () {
@@ -88,6 +96,14 @@ export default class Voices {
 
   polish () {
     return this.byLangCode('pl-PL')
+  }
+  
+  indianEnglish () {
+    return this.byLangCode('en-IN')
+  }
+
+  swedish () {
+    return this.byLangCode('sv-SE')
   }
 
   female () {

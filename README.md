@@ -141,7 +141,7 @@ const vitoria = voices.byId('Vitoria')
 voices.reset()
 const portuguese = voices.portuguese().male()
 
-// Helpers for specific languages
+// Helpers for specific language
 const english = voices.english()
 const portuguese = voices.portuguese()
 const dutch = voices.dutch()
@@ -149,7 +149,6 @@ const russian = voices.russian()
 const german = voices.german()
 const polish = voices.polish()
 const turkish = voices.turkish()
-const canadianFrench = voices.canadianFrench()
 const japanese = voices.japanese()
 const swedish = voices.swedish()
 const french = voices.french()
@@ -161,7 +160,7 @@ const brazilian = voice.brazilian()
 const europeanPortuguese = voice.europeanPortuguese()
 const british = voices.british()
 const indianEnglish = voices.indian()
-
+const canadianFrench = voices.canadianFrench()
 
 ```
 

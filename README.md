@@ -186,7 +186,7 @@ To run the tests, go to the terminal and enter:
 - [ ] Implement a helper for `Chinese Mandarin`
 - [ ] Implement a helper for `Welsh`
 - [x] Implement a helper for `Swedish`
-- [ ] Implement a helper for `Indian English`
+- [x] Implement a helper for `Indian English`
 - [x] Implement a helper for `Canadian French`
 - [ ] Implement a helper for `Australian English`
 - [ ] Implement a helper for `Romanian`

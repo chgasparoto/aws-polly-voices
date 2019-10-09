@@ -50,12 +50,28 @@ export default class Voices {
     return this.byLang('Portuguese')
   }
 
+  french () {
+    return this.byLang('French')
+  }
+
   american () {
     return this.byLangCode('en-US')
+  }
+  
+  canadianFrench () {
+    return this.byLangCode('fr-CA')
+  }
+
+  americanSpanish () {
+    return this.byLangCode('es-US')
   }
 
   brazilian () {
     return this.byLangCode('pt-BR')
+  }
+
+  europeanPortuguese () {
+    return this.byLangCode('pt-PT')
   }
 
   british () {
@@ -92,6 +108,10 @@ export default class Voices {
   
   indianEnglish () {
     return this.byLangCode('en-IN')
+  }
+
+  swedish () {
+    return this.byLangCode('sv-SE')
   }
 
   female () {

@@ -156,6 +156,7 @@ const french = voices.french()
 
 // Helpers for specific language and country
 const american = voice.american()
+const americanSpanish = voice.americanSpanish()
 const brazilian = voice.brazilian()
 const europeanPortuguese = voice.europeanPortuguese()
 const british = voices.british()
@@ -179,7 +180,7 @@ To run the tests, go to the terminal and enter:
 - [x] Implement a helper for `Portugal Portuguese`
 - [ ] Implement a helper for `Welsh English`
 - [ ] Implement a helper for `Spanish`
-- [ ] Implement a helper for `US Spanish`
+- [x] Implement a helper for `US Spanish`
 - [ ] Implement a helper for `Castilian Spanish`
 - [ ] Implement a helper for `Mexican Spanish`
 - [ ] Implement a helper for `Icelandic`

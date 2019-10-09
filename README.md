@@ -177,7 +177,7 @@ To run the tests, go to the terminal and enter:
 - [ ] Implement a helper for `US Spanish`
 - [ ] Implement a helper for `Castilian Spanish`
 - [ ] Implement a helper for `Mexican Spanish`
-- [ ] Implement a helper for `Icelandic`
+- [x] Implement a helper for `Icelandic`
 - [ ] Implement a helper for `Arabic`
 - [ ] Implement a helper for `Chinese Mandarin`
 - [ ] Implement a helper for `Welsh`

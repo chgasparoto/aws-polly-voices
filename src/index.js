@@ -94,6 +94,10 @@ export default class Voices {
     return this.byLangCode('de-DE')
   }
 
+  mexican () {
+    return this.byLangCode('es-MX')
+  }
+  
   japanese () {
     return this.byLangCode('ja-JP')
   }

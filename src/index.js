@@ -122,6 +122,10 @@ export default class Voices {
     return this.byLangCode('sv-SE')
   }
 
+  icelandic () {
+    return this.byLangCode('is-IS')
+  }
+
   female () {
     return this.byGender('female')
   }

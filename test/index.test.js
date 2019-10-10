@@ -44,13 +44,6 @@ const mockVoices = [{
   LanguageCode: 'nb-NO'
 },
 {
-  Gender: 'Male',
-  Name: 'Takumi',
-  LanguageName: 'Japanese',
-  Id: 'Takumi',
-  LanguageCode: 'ja-JP'
-},
-{
   Gender: 'Female',
   Name: 'Chantal',
   LanguageName: 'Canadian French',

@@ -126,6 +126,10 @@ export default class Voices {
     return this.byLangCode('is-IS')
   }
 
+  castilian () {
+    return this.byLangCode('es-ES')
+  }
+
   female () {
     return this.byGender('female')
   }

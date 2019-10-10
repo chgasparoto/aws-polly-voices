@@ -168,6 +168,27 @@ const mockVoices = [{
   LanguageName: 'Danish',
   Id: 'Asbjorn',
   LanguageCode: 'da-DK'
+},
+{
+  Gender: 'Female',
+  Name: 'Conchita',
+  LanguageName: 'Castilian Spanish',
+  Id: 'Conchita',
+  LanguageCode: 'es-ES'
+},
+{
+  Gender: 'Female',
+  Name: 'Lucia',
+  LanguageName: 'Castilian Spanish',
+  Id: 'Lucia',
+  LanguageCode: 'es-ES'
+},
+{
+  Gender: 'Male',
+  Name: 'Enrique',
+  LanguageName: 'Castilian Spanish',
+  Id: 'Enrique',
+  LanguageCode: 'es-ES'
 }]
 
 const voices = new Voices(mockVoices)
@@ -507,6 +528,17 @@ describe('Voices', () => {
     expect(spy).toHaveBeenCalledWith('pl-PL')
 
     spy.mockRestore()
+  })
+  test('it should return CASTILIAN SPANISH voice data', () => {
+    const spy = jest.spyOn(voices, 'byLangCode')
+    const castilian = voices.castilian()
+
+    expect(castilian.val).toBeArray()
+    expect(castilian.val[0]).toBeObject()
+    expect(castilian.val[0]).toContainAllKeys(voiceObjectKeys)
+    expect(castilian.id).toBeString()
+
+    expect(spy).toHaveBeenCalledWith('es-ES')
   })
   
   test('it should return ICELANDIC voice data', () => {

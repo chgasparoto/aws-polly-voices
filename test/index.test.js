@@ -125,7 +125,7 @@ const mockVoices = [{
 {
   Gender: 'Female',
   Name: 'Zeina',
-  LanguageName: 'Arabiv',
+  LanguageName: 'Arabic',
   Id: 'Zeina',
   LanguageCode: 'arb'
 

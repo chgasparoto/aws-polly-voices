@@ -23,18 +23,18 @@ const mockVoices = [{
   LanguageCode: 'de-DE'
 },
 {
-    Gender: 'Female',
-    Name: 'Mizuki',
-    LanguageName: 'Japanese',
-    Id: 'Mizuki',
-    LanguageCode: 'ja-JP'
+  Gender: 'Female',
+  Name: 'Mizuki',
+  LanguageName: 'Japanese',
+  Id: 'Mizuki',
+  LanguageCode: 'ja-JP'
 },
 {
-    Gender: 'Male',
-    Name: 'Takumi',
-    LanguageName: 'Japanese',
-    Id: 'Takumi',
-    LanguageCode: 'ja-JP'
+  Gender: 'Male',
+  Name: 'Takumi',
+  LanguageName: 'Japanese',
+  Id: 'Takumi',
+  LanguageCode: 'ja-JP'
 },
 {
   Gender: 'Female',
@@ -42,6 +42,13 @@ const mockVoices = [{
   LanguageName: 'Canadian French',
   Id: 'Chantal',
   LanguageCode: 'fr-CA'
+},
+{
+  Gender: 'Female',
+  Name: 'Mia',
+  LanguageName: 'Mexican Spanish',
+  Id: 'Mia',
+  LanguageCode: 'es-MX'
 },
 {
   Gender: 'Female',
@@ -80,6 +87,13 @@ const mockVoices = [{
 },
 {
   Gender: 'Female',
+  Name: 'Astrid',
+  LanguageName: 'Swedish',
+  Id: 'Astrid',
+  LanguageCode: 'sv-SE'
+},
+{
+  Gender: 'Female',
   Name: 'Filiz',
   LanguageName: 'Turkish',
   Id: 'Filiz',
@@ -108,12 +122,53 @@ const mockVoices = [{
 },
 {
   Gender: 'Female',
+  Name: 'Dóra',
+  LanguageName: 'Icelandic',
+  Id: 'Dora',
+  LanguageCode: 'is-IS'
+},
+{
+  Gender: 'Male',
+  Name: 'Karl',
+  LanguageName: 'Icelandic',
+  Id: 'Karl',
+  LanguageCode: 'is-IS'
+},
+{
+  Gender: 'Male',
+  Name: 'Miguel',
+  LanguageName: 'US Spanish',
+  Id: 'Miguel',
+  LanguageCode: 'es-US'
+},
+{
+  Gender: 'Female',
   Name: 'Aditi',
   LanguageName: 'IN English',
   Id: 'Aditi',
   LanguageCode: 'en-IN'
-}
-]
+},
+{
+  Gender: 'Female',
+  Name: 'Céline',
+  LanguageName: 'French',
+  Id: 'Celine',
+  LanguageCode: 'fr-FR'
+},
+{
+  Gender: 'Male',
+  Name: 'Mathieu',
+  LanguageName: 'French',
+  Id: 'Mathieu',
+  LanguageCode: 'fr-FR'
+},
+{
+  Gender: 'Male',
+  Name: 'Asbjorn',
+  LanguageName: 'Danish',
+  Id: 'Asbjorn',
+  LanguageCode: 'da-DK'
+}]
 
 const voices = new Voices(mockVoices)
 const voiceObjectKeys = ['Gender', 'Name', 'LanguageName', 'Id', 'LanguageCode']
@@ -214,6 +269,20 @@ describe('Voices', () => {
     expect(russian.id).toBeString()
 
     expect(spy).toHaveBeenCalledWith('ru-RU')
+
+    spy.mockRestore()
+  })
+
+  test('it should return SWEDISH voice data', () => {
+    const spy = jest.spyOn(voices, 'byLangCode')
+    const swedish = voices.swedish()
+
+    expect(swedish.val).toBeArray()
+    expect(swedish.val[0]).toBeObject()
+    expect(swedish.val[0]).toContainAllKeys(voiceObjectKeys)
+    expect(swedish.id).toBeString()
+
+    expect(spy).toHaveBeenCalledWith('sv-SE')
 
     spy.mockRestore()
   })
@@ -330,6 +399,20 @@ describe('Voices', () => {
     spy.mockRestore()
   })
 
+  test('it should return DANISH voice data', () => {
+    const spy = jest.spyOn(voices, 'byLangCode')
+    const danish = voices.danish()
+
+    expect(danish.val).toBeArray()
+    expect(danish.val[0]).toBeObject()
+    expect(danish.val[0]).toContainAllKeys(voiceObjectKeys)
+    expect(danish.id).toBeString()
+
+    expect(spy).toHaveBeenCalledWith('da-DK')
+
+    spy.mockRestore()
+  })
+
   test('it should return DUTCH voice data', () => {
     const spy = jest.spyOn(voices, 'byLangCode')
     const dutch = voices.dutch()
@@ -396,6 +479,22 @@ describe('Voices', () => {
     spy.mockRestore()
   })
 
+
+  test('it should return MEXICAN SPANISH voice data', () => {
+    const spy = jest.spyOn(voices, 'byLangCode')
+    const mexican = voices.mexican()
+
+    expect(mexican.val).toBeArray()
+    expect(mexican.val[0]).toBeObject()
+    expect(mexican.val[0]).toContainAllKeys(voiceObjectKeys)
+    expect(mexican.id).toBeString()
+
+    expect(spy).toHaveBeenCalledWith('es-MX')
+
+    spy.mockRestore()
+  })
+
+
   test('it should return POLISH voice data', () => {
     const spy = jest.spyOn(voices, 'byLangCode')
     const polish = voices.polish()
@@ -409,6 +508,32 @@ describe('Voices', () => {
 
     spy.mockRestore()
   })
+  
+  test('it should return ICELANDIC voice data', () => {
+    const spy = jest.spyOn(voices, 'byLangCode')
+    const icelandic = voices.icelandic()
+
+    expect(icelandic.val).toBeArray()
+    expect(icelandic.val[0]).toBeObject()
+    expect(icelandic.val[0]).toContainAllKeys(voiceObjectKeys)
+    expect(icelandic.id).toBeString()
+
+    expect(spy).toHaveBeenCalledWith('is-IS')
+    
+    spy.mockRestore()
+  })
+
+  test('it should return AMERICAN SPANISH voice data', () => {
+    const spy = jest.spyOn(voices, 'byLangCode')
+    const americanSpanish = voices.americanSpanish()
+
+    expect(americanSpanish.val).toBeArray()
+    expect(americanSpanish.val[0]).toBeObject()
+    expect(americanSpanish.val[0]).toContainAllKeys(voiceObjectKeys)
+    expect(americanSpanish.id).toBeString()
+
+    expect(spy).toHaveBeenCalledWith('es-US')
+  })
 
   test('it should return INDIAN ENGLISH voice data', () => {
     const spy = jest.spyOn(voices, 'byLangCode')
@@ -420,6 +545,20 @@ describe('Voices', () => {
     expect(indianEnglish.id).toBeString()
 
     expect(spy).toHaveBeenCalledWith('en-IN')
+
+    spy.mockRestore()
+  })
+
+  test('it should return FRENCH voice data', () => {
+    const spy = jest.spyOn(voices, 'byLang')
+    const french = voices.french()
+
+    expect(french.val).toBeArray()
+    expect(french.val[0]).toBeObject()
+    expect(french.val[0]).toContainAllKeys(voiceObjectKeys)
+    expect(french.id).toBeString()
+
+    expect(spy).toHaveBeenCalledWith('French')
 
     spy.mockRestore()
   })

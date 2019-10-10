@@ -154,6 +154,7 @@ const japanese = voices.japanese()
 const swedish = voices.swedish()
 const french = voices.french()
 const danish = voices.danish()
+const arabic = voices.arabic()
 
 // Helpers for specific language and country
 const american = voice.american()
@@ -187,7 +188,7 @@ To run the tests, go to the terminal and enter:
 - [ ] Implement a helper for `Castilian Spanish`
 - [x] Implement a helper for `Mexican Spanish`
 - [x] Implement a helper for `Icelandic`
-- [ ] Implement a helper for `Arabic`
+- [x] Implement a helper for `Arabic`
 - [ ] Implement a helper for `Chinese Mandarin`
 - [ ] Implement a helper for `Welsh`
 - [x] Implement a helper for `Swedish`

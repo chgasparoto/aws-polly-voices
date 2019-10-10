@@ -28,12 +28,16 @@ export default class Voices {
   }
 
   byLangCode (langCode) {
-    this.voices = this.voices.filter(voice => voice.LanguageCode.toLowerCase() === langCode.toLowerCase())
+    this.voices = this.voices.filter(
+      voice => voice.LanguageCode.toLowerCase() === langCode.toLowerCase()
+    )
     return this
   }
 
   byGender (gender) {
-    this.voices = this.voices.filter(voice => voice.Gender.toLowerCase() === gender.toLowerCase())
+    this.voices = this.voices.filter(
+      voice => voice.Gender.toLowerCase() === gender.toLowerCase()
+    )
     return this
   }
 
@@ -57,7 +61,7 @@ export default class Voices {
   american () {
     return this.byLangCode('en-US')
   }
-  
+
   canadianFrench () {
     return this.byLangCode('fr-CA')
   }
@@ -97,7 +101,7 @@ export default class Voices {
   mexican () {
     return this.byLangCode('es-MX')
   }
-  
+
   japanese () {
     return this.byLangCode('ja-JP')
   }
@@ -109,13 +113,17 @@ export default class Voices {
   polish () {
     return this.byLangCode('pl-PL')
   }
-  
+
   indianEnglish () {
     return this.byLangCode('en-IN')
   }
 
   swedish () {
     return this.byLangCode('sv-SE')
+  }
+
+  chineseMandarin () {
+    return this.byLangCode('zh-CN')
   }
 
   female () {

@@ -151,6 +151,7 @@ const polish = voices.polish()
 const turkish = voices.turkish()
 const icelandic = voices.icelandic()
 const japanese = voices.japanese()
+const norwegian = voices.norwegian()
 const swedish = voices.swedish()
 const french = voices.french()
 const danish = voices.danish()
@@ -200,7 +201,7 @@ To run the tests, go to the terminal and enter:
 - [x] Implement a helper for `French`
 - [x] Implement a helper for `Danish`
 - [x] Implement a helper for `Japanese`
-- [ ] Implement a helper for `Norwegian`
+- [x] Implement a helper for `Norwegian`
 - [ ] Implement a helper for `Korean`
 
 ## Contributing

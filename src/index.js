@@ -57,7 +57,7 @@ export default class Voices {
   american () {
     return this.byLangCode('en-US')
   }
-  
+
   canadianFrench () {
     return this.byLangCode('fr-CA')
   }
@@ -97,7 +97,7 @@ export default class Voices {
   mexican () {
     return this.byLangCode('es-MX')
   }
-  
+
   japanese () {
     return this.byLangCode('ja-JP')
   }
@@ -109,9 +109,13 @@ export default class Voices {
   polish () {
     return this.byLangCode('pl-PL')
   }
-  
+
   indianEnglish () {
     return this.byLangCode('en-IN')
+  }
+
+  norwegian () {
+    return this.byLangCode('nb-NO')
   }
 
   swedish () {

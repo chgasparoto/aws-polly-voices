@@ -118,12 +118,20 @@ export default class Voices {
     return this.byLangCode('en-IN')
   }
 
+  norwegian () {
+    return this.byLangCode('nb-NO')
+  }
+
   swedish () {
     return this.byLangCode('sv-SE')
   }
 
   icelandic () {
     return this.byLangCode('is-IS')
+  }
+
+  castilian () {
+    return this.byLangCode('es-ES')
   }
 
   female () {

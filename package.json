@@ -2,7 +2,7 @@
   "name": "aws-polly-voices",
   "version": "0.0.0-development",
   "description": "Helper module to get AWS polly voices in an idiomatic way",
-  "main": "dist/index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
     "test": "jest --coverage",

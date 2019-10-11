@@ -110,6 +110,10 @@ export default class Voices {
     return this.byLangCode('pl-PL')
   }
 
+  arabic () {
+    return this.byLangCode('arb')
+  }
+
   indianEnglish () {
     return this.byLangCode('en-IN')
   }

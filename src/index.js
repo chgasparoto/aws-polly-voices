@@ -57,7 +57,7 @@ export default class Voices {
   american () {
     return this.byLangCode('en-US')
   }
-  
+
   canadianFrench () {
     return this.byLangCode('fr-CA')
   }
@@ -97,7 +97,7 @@ export default class Voices {
   mexican () {
     return this.byLangCode('es-MX')
   }
-  
+
   japanese () {
     return this.byLangCode('ja-JP')
   }
@@ -109,7 +109,11 @@ export default class Voices {
   polish () {
     return this.byLangCode('pl-PL')
   }
-  
+
+  arabic () {
+    return this.byLangCode('arb')
+  }
+
   indianEnglish () {
     return this.byLangCode('en-IN')
   }
@@ -118,12 +122,20 @@ export default class Voices {
     return this.byLangCode('cy-GB')
   }
   
+  norwegian () {
+    return this.byLangCode('nb-NO')
+  }
+
   swedish () {
     return this.byLangCode('sv-SE')
   }
 
   icelandic () {
     return this.byLangCode('is-IS')
+  }
+
+  castilian () {
+    return this.byLangCode('es-ES')
   }
 
   female () {

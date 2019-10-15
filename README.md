@@ -152,9 +152,12 @@ const turkish = voices.turkish()
 const welsh = voices.welsh()
 const icelandic = voices.icelandic()
 const japanese = voices.japanese()
+const norwegian = voices.norwegian()
 const swedish = voices.swedish()
 const french = voices.french()
 const danish = voices.danish()
+const arabic = voices.arabic()
+
 
 // Helpers for specific language and country
 const american = voice.american()
@@ -165,7 +168,7 @@ const british = voices.british()
 const mexican = voices.mexican()
 const indianEnglish = voices.indian()
 const canadianFrench = voices.canadianFrench()
-
+const castilian = voices.castilian()
 
 ```
 
@@ -185,10 +188,10 @@ To run the tests, go to the terminal and enter:
 - [ ] Implement a helper for `Welsh English`
 - [ ] Implement a helper for `Spanish`
 - [x] Implement a helper for `US Spanish`
-- [ ] Implement a helper for `Castilian Spanish`
+- [x] Implement a helper for `Castilian Spanish`
 - [x] Implement a helper for `Mexican Spanish`
 - [x] Implement a helper for `Icelandic`
-- [ ] Implement a helper for `Arabic`
+- [x] Implement a helper for `Arabic`
 - [ ] Implement a helper for `Chinese Mandarin`
 - [x] Implement a helper for `Welsh`
 - [x] Implement a helper for `Swedish`
@@ -200,7 +203,7 @@ To run the tests, go to the terminal and enter:
 - [x] Implement a helper for `French`
 - [x] Implement a helper for `Danish`
 - [x] Implement a helper for `Japanese`
-- [ ] Implement a helper for `Norwegian`
+- [x] Implement a helper for `Norwegian`
 - [ ] Implement a helper for `Korean`
 
 ## Contributing

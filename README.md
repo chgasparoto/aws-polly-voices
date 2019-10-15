@@ -149,6 +149,7 @@ const russian = voices.russian()
 const german = voices.german()
 const polish = voices.polish()
 const turkish = voices.turkish()
+const welsh = voices.welsh()
 const icelandic = voices.icelandic()
 const japanese = voices.japanese()
 const norwegian = voices.norwegian()
@@ -192,7 +193,7 @@ To run the tests, go to the terminal and enter:
 - [x] Implement a helper for `Icelandic`
 - [x] Implement a helper for `Arabic`
 - [ ] Implement a helper for `Chinese Mandarin`
-- [ ] Implement a helper for `Welsh`
+- [x] Implement a helper for `Welsh`
 - [x] Implement a helper for `Swedish`
 - [x] Implement a helper for `Indian English`
 - [x] Implement a helper for `Canadian French`

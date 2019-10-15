@@ -118,6 +118,10 @@ export default class Voices {
     return this.byLangCode('en-IN')
   }
 
+  welsh () {
+    return this.byLangCode('cy-GB')
+  }
+  
   norwegian () {
     return this.byLangCode('nb-NO')
   }

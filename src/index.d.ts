@@ -1,81 +1,83 @@
 export default Voices;
 
 declare interface IVoice {
-    Gender: string;
-    Name: string;
-    LanguageName: string;
-    Id: string;
-    LanguageCode: string;
-  }  
+  Gender: string;
+  Name: string;
+  LanguageName: string;
+  Id: string;
+  LanguageCode: string;
+}  
 
 declare class Voices {
 
-    voices: Array<IVoice>;
-    original: Array<IVoice>;
+    static voices : Array<IVoice>;
+    static original : Array<IVoice>;
 
     constructor(voices : Array<IVoice>);
 
-    reset() : Voices;
+    reset() : this;
 
     languages(field : string) : Array<IVoice>;
 
-    byLang(lang : string) : Voices;
+    byLang(lang : string) : this;
 
-    byLangCode(langCode : string) : Voices;
+    byLangCode(langCode : string) : this;
 
-    byGender(gender : string) : Voices;
+    byGender(gender : string) : this;
 
-    byId(id : string) : Voices;
+    byId(id : string) : this;
 
-    english() : Voices;
+    english() : this;
     
-    portuguese() : Voices;
+    portuguese() : this;
 
-    french() : Voices;
+    french() : this;
 
-    american() : Voices;
+    american() : this;
 
-    canadianFrench() : Voices;
+    canadianFrench() : this;
 
-    americanSpanish() : Voices;
+    americanSpanish() : this;
 
-    brazilian() : Voices;
+    brazilian() : this;
 
-    europeanPortuguese() : Voices;
+    europeanPortuguese() : this;
 
-    british () : Voices;
+    british () : this;
 
-    dutch () : Voices;
+    dutch () : this;
 
-    russian () : Voices;
+    russian () : this;
 
-    turkish () : Voices;
+    turkish () : this;
 
-    german () : Voices;
+    german () : this;
 
-    mexican () : Voices;
+    mexican () : this;
 
-    japanese () : Voices;
+    japanese () : this;
 
-    danish () : Voices;
+    danish () : this;
 
-    polish () : Voices;
+    polish () : this;
 
-    arabic () : Voices;
+    arabic () : this;
 
-    indianEnglish () : Voices;
+    indianEnglish () : this;
 
-    norwegian () : Voices;
+    welsh () : this;
 
-    swedish () : Voices;
+    norwegian () : this;
 
-    icelandic () : Voices;
+    swedish () : this;
 
-    castilian () : Voices;
+    icelandic () : this;
 
-    female () : Voices;
+    castilian () : this;
 
-    male () : Voices;
+    female () : this;
+
+    male () : this;
 
     get val() : Array<IVoice>;
 

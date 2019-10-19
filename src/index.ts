@@ -1,17 +1,9 @@
 import { Voices as voicesArray } from './voices.json'
 
-interface IVoice {
-  Gender: string;
-  Name: string;
-  LanguageName: string;
-  Id: string;
-  LanguageCode: string;
-}
-
 export default class Voices {
 
-  voices: IVoice[];
-  original: IVoice[];
+  voices;
+  original;
 
   constructor (voices = voicesArray) {
     this.voices = voices

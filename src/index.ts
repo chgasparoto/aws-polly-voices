@@ -2,8 +2,8 @@ import { Voices as voicesArray } from './voices.json'
 
 export default class Voices {
 
-  voices;
-  original;
+  voices
+  original
 
   constructor (voices = voicesArray) {
     this.voices = voices

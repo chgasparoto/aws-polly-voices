@@ -2,14 +2,16 @@
   "compilerOptions": {
     "declaration": true,
     "declarationMap": true,
-    "lib": ["es2018"],
+    "typeRoots": ["./src"],
+    "lib": ["es6"],
     "outDir": "./dist",
-    "target": "es2018",
+    "target": "ES6",
     "module": "commonjs",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "downlevelIteration": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "noEmit": true
   },
   "include": [
     "./src/**/*"

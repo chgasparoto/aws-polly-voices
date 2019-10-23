@@ -16,7 +16,7 @@
     "semantic-release": "semantic-release",
     "commit": "git-cz",
     "prepublishOnly": "npm run build",
-    "check-types": "tsc"
+    "check-types": "tsc -d"
   },
   "repository": {
     "type": "git",

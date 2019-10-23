@@ -6,81 +6,81 @@ declare interface IVoice {
   LanguageName: string;
   Id: string;
   LanguageCode: string;
-}  
+}
 
 declare class Voices {
 
-    static voices : Array<IVoice>;
-    static original : Array<IVoice>;
+  static voices: ReadonlyArray<IVoice>;
+  static original: ReadonlyArray<IVoice>;
 
-    constructor(voices : Array<IVoice>);
+  constructor(voices : Array<IVoice>);
 
-    reset() : this;
+  reset(): this;
 
-    languages(field : string) : Array<IVoice>;
+  languages(field: string): Array<IVoice>;
 
-    byLang(lang : string) : this;
+  byLang(lang: string): this;
 
-    byLangCode(langCode : string) : this;
+  byLangCode(langCode: string): this;
 
-    byGender(gender : string) : this;
+  byGender(gender: string): this;
 
-    byId(id : string) : this;
+  byId(id: string): this;
 
-    english() : this;
-    
-    portuguese() : this;
+  english(): this;
 
-    french() : this;
+  portuguese(): this;
 
-    american() : this;
+  french(): this;
 
-    canadianFrench() : this;
+  american(): this;
 
-    americanSpanish() : this;
+  canadianFrench(): this;
 
-    brazilian() : this;
+  americanSpanish(): this;
 
-    europeanPortuguese() : this;
+  brazilian(): this;
 
-    british () : this;
+  europeanPortuguese(): this;
 
-    dutch () : this;
+  british(): this;
 
-    russian () : this;
+  dutch(): this;
 
-    turkish () : this;
+  russian(): this;
 
-    german () : this;
+  turkish(): this;
 
-    mexican () : this;
+  german(): this;
 
-    japanese () : this;
+  mexican(): this;
 
-    danish () : this;
+  japanese(): this;
 
-    polish () : this;
+  danish(): this;
 
-    arabic () : this;
+  polish(): this;
 
-    indianEnglish () : this;
+  arabic(): this;
 
-    welsh () : this;
+  indianEnglish(): this;
 
-    norwegian () : this;
+  welsh(): this;
 
-    swedish () : this;
+  norwegian(): this;
 
-    icelandic () : this;
+  swedish(): this;
 
-    castilian () : this;
+  icelandic(): this;
 
-    female () : this;
+  castilian(): this;
 
-    male () : this;
+  female(): this;
 
-    get val() : Array<IVoice>;
+  male(): this;
 
-    get id() : string;
+  get val(): Array<IVoice>;
+
+  get id(): string;
 }
 

@@ -121,7 +121,7 @@ export default class Voices {
   welsh () {
     return this.byLangCode('cy-GB')
   }
-  
+
   norwegian () {
     return this.byLangCode('nb-NO')
   }
@@ -136,6 +136,10 @@ export default class Voices {
 
   castilian () {
     return this.byLangCode('es-ES')
+  }
+
+  welshEnglish () {
+    return this.byLangCode('en-GB-WLS')
   }
 
   female () {

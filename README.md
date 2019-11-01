@@ -169,6 +169,7 @@ const mexican = voices.mexican()
 const indianEnglish = voices.indian()
 const canadianFrench = voices.canadianFrench()
 const castilian = voices.castilian()
+const welshEnglish = voices.welshEnglish()
 
 ```
 
@@ -185,7 +186,7 @@ To run the tests, go to the terminal and enter:
 - [x] CI/CD with `sematinc-release` integrating with `Travis`, `Github` and `NPM registry`
 - [ ] Add support for Typescript
 - [x] Implement a helper for `Portugal Portuguese`
-- [ ] Implement a helper for `Welsh English`
+- [x] Implement a helper for `Welsh English`
 - [ ] Implement a helper for `Spanish`
 - [x] Implement a helper for `US Spanish`
 - [x] Implement a helper for `Castilian Spanish`

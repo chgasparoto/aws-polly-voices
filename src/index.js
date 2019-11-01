@@ -138,6 +138,10 @@ export default class Voices {
     return this.byLangCode('es-ES')
   }
 
+  welshEnglish() {
+    return this.byLangCode('en-GB-WLS')
+  }
+
   female () {
     return this.byGender('female')
   }

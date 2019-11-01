@@ -215,11 +215,11 @@ const mockVoices = [{
   LanguageCode: 'es-ES'
 },
 {
-  "Gender": "Male",
-  "Name": "Geraint",
-  "LanguageName": "Welsh English",
-  "Id": "Geraint",
-  "LanguageCode": "en-GB-WLS"
+  Gender: 'Male',
+  Name: 'Geraint',
+  LanguageName: 'Welsh English',
+  Id: 'Geraint',
+  LanguageCode: 'en-GB-WLS'
 }]
 
 const voices = new Voices(mockVoices)
@@ -492,7 +492,7 @@ describe('Voices', () => {
 
     spy.mockRestore()
   })
-      
+
   test('it should return NORWEGIAN voice data', () => {
     const spy = jest.spyOn(voices, 'byLangCode')
     const norwegian = voices.norwegian()

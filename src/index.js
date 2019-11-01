@@ -121,7 +121,7 @@ export default class Voices {
   welsh () {
     return this.byLangCode('cy-GB')
   }
-  
+
   norwegian () {
     return this.byLangCode('nb-NO')
   }
@@ -138,7 +138,7 @@ export default class Voices {
     return this.byLangCode('es-ES')
   }
 
-  welshEnglish() {
+  welshEnglish () {
     return this.byLangCode('en-GB-WLS')
   }
 

@@ -16,7 +16,7 @@ A lightweight library to get the VoiceID programmatically without install or cal
 
 ```sh
 node -v
-node: >= v8.16.1
+node: >= v10.23.1
 ```
 
 ## Installing

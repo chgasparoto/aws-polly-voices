@@ -50,12 +50,28 @@ export default class Voices {
     return this.byLang('Portuguese')
   }
 
+  french () {
+    return this.byLang('French')
+  }
+
   american () {
     return this.byLangCode('en-US')
   }
 
+  canadianFrench () {
+    return this.byLangCode('fr-CA')
+  }
+
+  americanSpanish () {
+    return this.byLangCode('es-US')
+  }
+
   brazilian () {
     return this.byLangCode('pt-BR')
+  }
+
+  europeanPortuguese () {
+    return this.byLangCode('pt-PT')
   }
 
   british () {
@@ -74,12 +90,60 @@ export default class Voices {
     return this.byLangCode('ru-RU')
   }
 
+  turkish () {
+    return this.byLangCode('tr-TR')
+  }
+
   german () {
     return this.byLangCode('de-DE')
   }
 
+  mexican () {
+    return this.byLangCode('es-MX')
+  }
+
+  japanese () {
+    return this.byLangCode('ja-JP')
+  }
+
+  danish () {
+    return this.byLangCode('da-DK')
+  }
+
   polish () {
     return this.byLangCode('pl-PL')
+  }
+
+  arabic () {
+    return this.byLangCode('arb')
+  }
+
+  indianEnglish () {
+    return this.byLangCode('en-IN')
+  }
+
+  welsh () {
+    return this.byLangCode('cy-GB')
+  }
+
+  norwegian () {
+    return this.byLangCode('nb-NO')
+  }
+
+  swedish () {
+    return this.byLangCode('sv-SE')
+  }
+
+  icelandic () {
+    return this.byLangCode('is-IS')
+  }
+
+  castilian () {
+    return this.byLangCode('es-ES')
+  }
+
+  welshEnglish () {
+    return this.byLangCode('en-GB-WLS')
   }
 
   female () {

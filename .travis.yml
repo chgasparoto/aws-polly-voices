@@ -11,7 +11,7 @@ branches:
 jobs:
   include:
     - stage: release
-      node_js: 12
+      node_js: lts/*
       script: npm t && codecov
       deploy:
         provider: script

@@ -16,7 +16,7 @@ A lightweight library to get the VoiceID programmatically without install or cal
 
 ```sh
 node -v
-node: >= v8.16.1
+node: >= v10.23.1
 ```
 
 ## Installing
@@ -141,20 +141,36 @@ const vitoria = voices.byId('Vitoria')
 voices.reset()
 const portuguese = voices.portuguese().male()
 
-// Helpers for specific languages
+// Helpers for specific language
 const english = voices.english()
 const portuguese = voices.portuguese()
 const dutch = voices.dutch()
 const russian = voices.russian()
 const german = voices.german()
 const polish = voices.polish()
+const italian = voices.italian()
 const turkish = voices.turkish()
 const spanish = voices.spanish()
+const welsh = voices.welsh()
+const icelandic = voices.icelandic()
+const japanese = voices.japanese()
+const norwegian = voices.norwegian()
+const swedish = voices.swedish()
+const french = voices.french()
+const danish = voices.danish()
+const arabic = voices.arabic()
 
 // Helpers for specific language and country
 const american = voice.american()
+const americanSpanish = voice.americanSpanish()
 const brazilian = voice.brazilian()
+const europeanPortuguese = voice.europeanPortuguese()
 const british = voices.british()
+const mexican = voices.mexican()
+const indianEnglish = voices.indian()
+const canadianFrench = voices.canadianFrench()
+const castilian = voices.castilian()
+const welshEnglish = voices.welshEnglish()
 
 ```
 
@@ -170,27 +186,28 @@ To run the tests, go to the terminal and enter:
 - [x] Documentation (this file)
 - [x] CI/CD with `sematinc-release` integrating with `Travis`, `Github` and `NPM registry`
 - [ ] Add support for Typescript
-- [ ] Implement a helper for `Portugal Portuguese`
-- [ ] Implement a helper for `Welsh English`
+- [x] Implement a helper for `Portugal Portuguese`
+- [x] Implement a helper for `Welsh English`
 - [x] Implement a helper for `Spanish`
-- [ ] Implement a helper for `US Spanish`
-- [ ] Implement a helper for `Castilian Spanish`
-- [ ] Implement a helper for `Mexican Spanish`
-- [ ] Implement a helper for `Icelandic`
-- [ ] Implement a helper for `Arabic`
+- [x] Implement a helper for `US Spanish`
+- [x] Implement a helper for `Castilian Spanish`
+- [x] Implement a helper for `Mexican Spanish`
+- [x] Implement a helper for `Icelandic`
+- [x] Implement a helper for `Arabic`
 - [ ] Implement a helper for `Chinese Mandarin`
-- [ ] Implement a helper for `Welsh`
-- [ ] Implement a helper for `Swedish`
-- [ ] Implement a helper for `Indian English`
-- [ ] Implement a helper for `Canadian French`
+- [x] Implement a helper for `Welsh`
+- [x] Implement a helper for `Swedish`
+- [x] Implement a helper for `Indian English`
+- [x] Implement a helper for `Canadian French`
 - [ ] Implement a helper for `Australian English`
 - [ ] Implement a helper for `Romanian`
 - [x] Implement a helper for `Turkish`
-- [ ] Implement a helper for `French`
-- [ ] Implement a helper for `Danish`
-- [ ] Implement a helper for `Japanese`
-- [ ] Implement a helper for `Norwegian`
+- [x] Implement a helper for `French`
+- [x] Implement a helper for `Danish`
+- [x] Implement a helper for `Japanese`
+- [x] Implement a helper for `Norwegian`
 - [ ] Implement a helper for `Korean`
+- [x] Implement a helper for `Italian`
 
 ## Contributing
 

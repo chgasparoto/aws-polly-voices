@@ -137,6 +137,13 @@ const mockVoices = [{
   LanguageCode: 'pl-PL'
 },
 {
+  Gender: 'Male',
+  Name: 'Enrique',
+  LanguageName: 'Spanish',
+  Id: 'Enrique',
+  LanguageCode: 'es-ES'
+},
+{
   Gender: 'Female',
   Name: 'Zeina',
   LanguageName: 'Arabic',
@@ -606,6 +613,18 @@ describe('Voices', () => {
     expect(spy).toHaveBeenCalledWith('pl-PL')
 
     spy.mockRestore()
+  })
+
+  test('it should return SPANISH voice data', () => {
+    const spy = jest.spyOn(voices, 'byLang')
+    const spanish = voices.spanish()
+
+    expect(spanish.val).toBeArray()
+    expect(spanish.val[0]).toBeObject()
+    expect(spanish.val[0]).toContainAllKeys(voiceObjectKeys)
+    expect(spanish.id).toBeString()
+
+    expect(spy).toHaveBeenCalledWith('Spanish')
   })
 
   test('it should return ARABIC voice data', () => {

@@ -170,6 +170,13 @@
         },
         {
             "Gender": "Male",
+            "Name": "Kevin",
+            "LanguageName": "US English",
+            "Id": "Kevin",
+            "LanguageCode": "en-US"
+        },
+        {
+            "Gender": "Male",
             "Name": "Russell",
             "LanguageName": "Australian English",
             "Id": "Russell",
@@ -247,6 +254,13 @@
             "LanguageName": "Australian English",
             "Id": "Nicole",
             "LanguageCode": "en-AU"
+        },
+        {
+            "Gender": "Female",
+            "Name": "Camila",
+            "LanguageName": "Brazilian Portuguese",
+            "Id": "Camila",
+            "LanguageCode": "pt-BR"
         },
         {
             "Gender": "Female",
@@ -333,6 +347,13 @@
             "LanguageCode": "ru-RU"
         },
         {
+            "Gender": "Female",
+            "Name": "Olivia",
+            "LanguageName": "Australian English",
+            "Id": "Olivia",
+            "LanguageCode": "en-AU"
+        },
+        {
             "Gender": "Male",
             "Name": "Ruben",
             "LanguageName": "Dutch",
@@ -397,6 +418,13 @@
         },
         {
             "Gender": "Female",
+            "Name": "Lupe",
+            "LanguageName": "US Spanish",
+            "Id": "Lupe",
+            "LanguageCode": "es-US"
+        },
+        {
+            "Gender": "Female",
             "Name": "Seoyeon",
             "LanguageName": "Korean",
             "Id": "Seoyeon",
@@ -405,7 +433,7 @@
         {
             "Gender": "Female",
             "Name": "Emma",
-            "LanguageName": "Brithsh English",
+            "LanguageName": "British English",
             "Id": "Emma",
             "LanguageCode": "en-GB"
         }

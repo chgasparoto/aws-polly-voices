@@ -166,6 +166,7 @@ const americanSpanish = voice.americanSpanish()
 const brazilian = voice.brazilian()
 const europeanPortuguese = voice.europeanPortuguese()
 const british = voices.british()
+const australian = voices.australian()
 const mexican = voices.mexican()
 const indianEnglish = voices.indian()
 const canadianFrench = voices.canadianFrench()
@@ -199,7 +200,7 @@ To run the tests, go to the terminal and enter:
 - [x] Implement a helper for `Swedish`
 - [x] Implement a helper for `Indian English`
 - [x] Implement a helper for `Canadian French`
-- [ ] Implement a helper for `Australian English`
+- [x] Implement a helper for `Australian English`
 - [ ] Implement a helper for `Romanian`
 - [x] Implement a helper for `Turkish`
 - [x] Implement a helper for `French`

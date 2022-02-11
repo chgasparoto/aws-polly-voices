@@ -58,6 +58,9 @@ export default class Voices {
     return this.byLangCode('en-US')
   }
 
+  australian () {
+    return this.byLangCode('en-AU')
+
   canadianFrench () {
     return this.byLangCode('fr-CA')
   }

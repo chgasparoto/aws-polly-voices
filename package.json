@@ -47,7 +47,7 @@
     "jest-extended": "^0.11.2",
     "nodemon": "^2.0.7",
     "rimraf": "^3.0.0",
-    "semantic-release": "^17.2.3",
+    "semantic-release": "^19.0.3",
     "standard": "^14.1.0"
   },
   "config": {

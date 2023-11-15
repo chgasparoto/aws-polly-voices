@@ -2,6 +2,20 @@
     "Voices": [
         {
             "Gender": "Female",
+            "Name": "Lisa",
+            "LanguageName": "Dutch (Belgian)",
+            "Id": "Lisa",
+            "LanguageCode": "nl-BE"
+        },
+        {
+            "Gender": "Female",
+            "Name": "Laura",
+            "LanguageName": "Dutch",
+            "Id": "Laura",
+            "LanguageCode": "nl-NL"
+        },
+        {
+            "Gender": "Female",
             "Name": "Lotte",
             "LanguageName": "Dutch",
             "Id": "Lotte",
